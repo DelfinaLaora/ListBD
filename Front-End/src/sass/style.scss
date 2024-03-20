@@ -1,1 +1,11 @@
+@import './Utils/variables';
+@import './Utils/reset';
+@import './Utils/font';
+
+@import './Components/banniere';
+@import './Components/form';
+
 @import './Layout/general';
+@import './Layout/header';
+@import './Layout/footer';
+@import './Layout/error';

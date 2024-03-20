@@ -5,8 +5,9 @@ import './sass/style.scss'
 import Root from './main/Root/Root'
 import reportWebVitals from './reportWebVitals'
 import Error from './main/Error/Error'
-import MesBd from './main/MesBd/Mesbd'
+
 import Home from './main/Home/Home'
+import Albums from './main/Albums/Albums'
 const router = createBrowserRouter([
    {
       path: '/',
@@ -25,14 +26,19 @@ const router = createBrowserRouter([
             // le fichier <Outlet>.
             children: [
                { index: true, element: <Home /> },
+
                {
-                  path: '/MesBd',
-                  element: <MesBd />,
+                  path: '/albums',
+                  element: <Albums />,
                },
                // {
-               //   path: "/annonce/:id",
-               //   element: <Housing />,
-               // },
+               //    path: "/collection",
+               //    element: <Collection />,
+               //  },
+               //  {
+               //    path: "/album_item",
+               //    element: <AlbumItem />,
+               //  },
                {
                   path: '*',
                   element: <Error />,

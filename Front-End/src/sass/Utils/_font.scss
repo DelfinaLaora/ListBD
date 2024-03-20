@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Ruluko&family=Whisper&display=swap');
+$font-1: 'Ruluko', sans-serif;
+$font-2: 'Whisper', cursive;
+$font-3: 'Allan', serif;
+
+body {
+   font-family: $font-1;
+}
+.section_citation {
+   font-family: $font-2;
+}
+
+.chiffre-romain {
+   font-family: $font-3;
+   font-size: 14px;
+}

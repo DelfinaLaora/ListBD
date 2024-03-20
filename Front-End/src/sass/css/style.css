@@ -1,3 +1,103 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Ruluko&family=Whisper&display=swap");
+:root {
+  --color-one: #f1efdc;
+  --color-two: #e6d2aa;
+  --color-three: #d36b00;
+  --color-four: #42032c;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+/*reset CSS afin de réinitialiser les données dans les différents navigateurs*/
+body {
+  font-family: "Ruluko", sans-serif;
+}
+
+.section_citation {
+  font-family: "Whisper", cursive;
+}
+
+.chiffre-romain {
+  font-family: "Allan", serif;
+  font-size: 14px;
+}
+
+.section_citation {
+  display: flex;
+  margin: auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+}
+.section_citation img {
+  align-self: center;
+  width: 40%;
+  height: 40%;
+  border-radius: 47px;
+  object-fit: cover;
+}
+.section_citation blockquote {
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 150px;
+}
+.section_citation blockquote p {
+  font-size: 45px;
+  width: 90%;
+  line-height: 40px;
+}
+.section_citation blockquote p::before {
+  content: "“";
+}
+.section_citation blockquote p::after {
+  content: "”";
+}
+.section_citation blockquote :nth-child(3) {
+  text-align: right;
+}
+.section_citation blockquote cite {
+  padding: 30px;
+  font-size: 25px;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 30px 90px 30px 15px;
+}
+.formulaire .input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 40%;
+}
+.formulaire .input-wrapper label {
+  font-size: 30px;
+  width: 60%;
+}
+.formulaire .input-wrapper input {
+  width: 55%;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--color-one);
+}
+.formulaire .input-wrapper button {
+  width: 40%;
+  height: 40px;
+  margin: auto;
+  font-size: 25px;
+  background-color: var(--color-two);
+  border-radius: 47px;
+  border: 1px solid var(--color-two);
+}
+
 :root {
   width: 100%;
   display: flex;
@@ -7,5 +107,73 @@
 body {
   width: 100%;
   margin: auto;
-  background-color: var(--color-quaternary);
+  background-color: var(--color-one);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-three);
+  align-items: center;
+  height: 100px;
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+}
+header .recherche {
+  position: relative;
+  width: 23%;
+  height: 40px;
+  border-radius: 47px;
+  border: 2px solid var(--color-three);
+}
+header .icon-loupe {
+  position: absolute;
+  margin-left: 80px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-four);
+}
+footer p {
+  text-align: right;
+  margin-right: 20px;
+  color: var(--color-two);
+}
+
+.contener-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.contener-error h2 {
+  font-size: 36px;
+  margin-left: 50px;
+  color: var(--color-four);
+}
+.contener-error a {
+  font-size: 30px;
+  margin-right: 50px;
+  color: var(--color-four);
+  text-decoration: underline;
+}
+.contener-error img {
+  width: 38%;
+  border-radius: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+.section_citation {
+   display: flex;
+   margin: auto;
+   padding-top: 30px;
+   padding-left: 30px;
+   padding-bottom: 30px;
+   width: 80%;
+   // border: 2px solid rgb(21, 0, 255);
+   img {
+      align-self: center;
+      width: 40%;
+      height: 40%;
+      border-radius: 47px;
+      object-fit: cover;
+      // border: 2px solid rgb(21, 0, 255);
+   }
+   blockquote {
+      margin: 0;
+      padding-left: 30px;
+      padding-top: 150px;
+      // border: 2px solid rgb(28, 193, 222);
+      p {
+         font-size: 45px;
+         width: 90%;
+         line-height: 40px;
+         // border: 2px solid rgb(55, 255, 0);
+      }
+      p::before {
+         content: '\201C';
+      }
+      p::after {
+         content: '\201D';
+      }
+      :nth-child(3) {
+         text-align: right;
+         //   border: 2px solid rgb(255, 0, 200);
+      }
+      cite {
+         padding: 30px;
+         font-size: 25px;
+         //  border: 2px solid rgb(55, 255, 0);
+      }
+   }
+}

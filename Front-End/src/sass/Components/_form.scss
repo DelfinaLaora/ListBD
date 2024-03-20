@@ -1,0 +1,44 @@
+.formulaire {
+   display: flex;
+   // flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: auto;
+   padding: 30px 90px 30px 15px;
+   // border: 2px solid red;
+
+   .input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      // padding-right: 30px;
+      width: 40%;
+      // border: 1px solid rgb(21, 0, 255);
+      label {
+         font-size: 30px;
+         width: 60%;
+         // margin-left: 70px;
+         // border: 1px solid rgb(0, 255, 42);
+      }
+
+      input {
+         width: 55%;
+         height: 35px;
+         border-radius: 5px;
+         border: 2px solid (var(--color-one));
+         // border: 1px solid rgb(228, 217, 14);
+      }
+
+      button {
+         width: 40%;
+         height: 40px;
+         margin: auto;
+         font-size: 25px;
+         background-color: (var(--color-two));
+         border-radius: 47px;
+         border: 1px solid (var(--color-two));
+      }
+   }
+}

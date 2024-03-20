@@ -1,0 +1,33 @@
+:root {
+   --color-one: #f1efdc;
+   --color-two: #e6d2aa;
+   --color-three: #d36b00;
+   --color-four: #42032c;
+
+   --color-black: #000000;
+   --color-white: #ffffff;
+}
+
+$breakpoints: (
+   desktop: 1025px,
+   tablet: 769px,
+   mobil: 376px,
+);
+
+@mixin desktop {
+   @media screen and (max-width: map-get($breakpoints, desktop)) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media screen and (max-width: map-get($breakpoints, tablet)) {
+      @content;
+   }
+}
+
+@mixin mobil {
+   @media screen and (max-width: map-get($breakpoints, mobil)) {
+      @content;
+   }
+}

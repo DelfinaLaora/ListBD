@@ -1,0 +1,23 @@
+.contener-error {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   h2 {
+      font-size: 36px;
+      margin-left: 50px;
+      color: (var(--color-four));
+   }
+
+   a {
+      font-size: 30px;
+      margin-right: 50px;
+      color: (var(--color-four));
+      text-decoration: underline;
+   }
+   img {
+      width: 38%;
+      border-radius: 100%;
+   }
+}
